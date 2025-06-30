@@ -1,0 +1,149 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --button-base-font-family: "Mona Sans", Helvetica;
+  --button-base-font-size: 20px;
+  --button-base-font-style: normal;
+  --button-base-font-weight: 700;
+  --button-base-letter-spacing: 0px;
+  --button-base-line-height: 24px;
+  --content-card-title-font-family: "Mona Sans", Helvetica;
+  --content-card-title-font-size: 16px;
+  --content-card-title-font-style: normal;
+  --content-card-title-font-weight: 600;
+  --content-card-title-letter-spacing: 0px;
+  --content-card-title-line-height: 150%;
+  --content-chip-font-family: "Inter", Helvetica;
+  --content-chip-font-size: 12px;
+  --content-chip-font-style: normal;
+  --content-chip-font-weight: 400;
+  --content-chip-letter-spacing: 0px;
+  --content-chip-line-height: normal;
+  --content-subtitle-font-family: "Mona Sans", Helvetica;
+  --content-subtitle-font-size: 18px;
+  --content-subtitle-font-style: normal;
+  --content-subtitle-font-weight: 700;
+  --content-subtitle-letter-spacing: 0px;
+  --content-subtitle-line-height: normal;
+  --content-text-font-family: "Mona Sans", Helvetica;
+  --content-text-font-size: 16px;
+  --content-text-font-style: normal;
+  --content-text-font-weight: 400;
+  --content-text-letter-spacing: 0px;
+  --content-text-line-height: 24px;
+  --content-text-small-font-family: "Mona Sans", Helvetica;
+  --content-text-small-font-size: 16px;
+  --content-text-small-font-style: normal;
+  --content-text-small-font-weight: 400;
+  --content-text-small-letter-spacing: 0.32px;
+  --content-text-small-line-height: 150%;
+  --content-titles-font-family: "Mona Sans", Helvetica;
+  --content-titles-font-size: 24px;
+  --content-titles-font-style: normal;
+  --content-titles-font-weight: 700;
+  --content-titles-letter-spacing: 0px;
+  --content-titles-line-height: normal;
+  --drop-shadow-100: 0px 1px 4px 0px rgba(12, 12, 13, 0.05);
+  --menu-item-base-font-family: "Mona Sans", Helvetica;
+  --menu-item-base-font-size: 16px;
+  --menu-item-base-font-style: normal;
+  --menu-item-base-font-weight: 500;
+  --menu-item-base-letter-spacing: 0px;
+  --menu-item-base-line-height: normal;
+  --text-small-font-family: "Inter", Helvetica;
+  --text-small-font-size: 16px;
+  --text-small-font-style: normal;
+  --text-small-font-weight: 400;
+  --text-small-letter-spacing: 0px;
+  --text-small-line-height: 26px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
